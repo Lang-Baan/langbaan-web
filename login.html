@@ -2,267 +2,200 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-      <title>เข้าสู่ระบบ | หลังบ้าน</title>
-
-        <style>
-          .google-btn {
-  background: linear-gradient(135deg, #ff4d8d, #ff6fa5);
-  color: white;
-  border: none;
-}
-
-.facebook-btn {
-  background: linear-gradient(135deg, #ff4d8d, #ff6fa5);
-  color: white;
-  border: none;
-}
-
-.google-btn:hover,
-.facebook-btn:hover {
-  opacity: 0.9;
-}
-
-            *{
-                  margin:0;
-                        padding:0;
-                              box-sizing:border-box;
-                                    font-family:sans-serif;
-                                        }
-
-                                            body{
-                                                  background:#121212;
-                                                        color:white;
-
-                                                              min-height:100vh;
-
-                                                                    display:flex;
-                                                                          flex-direction:column;
-                                                                              }
-
-                                                                                  /* topbar */
-
-                                                                                      .topbar{
-                                                                                            padding:20px 24px;
-
-                                                                                                  border-bottom:1px solid #222;
-                                                                                                      }
-
-                                                                                                          .logo{
-                                                                                                                font-size:22px;
-                                                                                                                      font-weight:700;
-                                                                                                                          }
-
-                                                                                                                              .logo span{
-                                                                                                                                    color:#ff2d55;
-                                                                                                                                          margin-right:6px;
-                                                                                                                                              }
-
-                                                                                                                                                  /* center */
-
-                                                                                                                                                      .container{
-                                                                                                                                                            flex:1;
-
-                                                                                                                                                                  display:flex;
-                                                                                                                                                                        justify-content:center;
-                                                                                                                                                                              align-items:center;
-
-                                                                                                                                                                                    padding:24px;
-                                                                                                                                                                                        }
-
-                                                                                                                                                                                            .card{
-                                                                                                                                                                                                  width:100%;
-                                                                                                                                                                                                        max-width:420px;
-
-                                                                                                                                                                                                              background:#1b1b1b;
-
-                                                                                                                                                                                                                    border:1px solid #2a2a2a;
-
-                                                                                                                                                                                                                          border-radius:30px;
-
-                                                                                                                                                                                                                                padding:40px 28px;
-
-                                                                                                                                                                                                                                      text-align:center;
-                                                                                                                                                                                                                                          }
-
-                                                                                                                                                                                                                                              .title{
-                                                                                                                                                                                                                                                    font-size:34px;
-                                                                                                                                                                                                                                                          font-weight:700;
-
-                                                                                                                                                                                                                                                                margin-bottom:12px;
-                                                                                                                                                                                                                                                                    }
-
-                                                                                                                                                                                                                                                                        .subtitle{
-                                                                                                                                                                                                                                                                              color:#a1a1a1;
-
-                                                                                                                                                                                                                                                                                    line-height:1.6;
-
-                                                                                                                                                                                                                                                                                          margin-bottom:34px;
-                                                                                                                                                                                                                                                                                              }
-
-                                                                                                                                                                                                                                                                                                  /* buttons */
-
-                                                                                                                                                                                                                                                                                                      .login-btn{
-                                                                                                                                                                                                                                                                                                            width:100%;
-
-                                                                                                                                                                                                                                                                                                                  padding:16px;
-
-                                                                                                                                                                                                                                                                                                                        border:none;
-
-                                                                                                                                                                                                                                                                                                                              border-radius:18px;
-
-                                                                                                                                                                                                                                                                                                                                    margin-bottom:14px;
-
-                                                                                                                                                                                                                                                                                                                                          background:#2a2a2a;
-
-                                                                                                                                                                                                                                                                                                                                                color:white;
-
-                                                                                                                                                                                                                                                                                                                                                      font-size:16px;
-                                                                                                                                                                                                                                                                                                                                                            font-weight:600;
-
-                                                                                                                                                                                                                                                                                                                                                                  cursor:pointer;
-                                                                                                                                                                                                                                                                                                                                                                      }
-
-                                                                                                                                                                                                                                                                                                                                                                          .login-btn.google{
-                                                                                                                                                                                                                                                                                                                                                                                background:#ff2d55;
-                                                                                                                                                                                                                                                                                                                                                                                    }
-
-                                                                                                                                                                                                                                                                                                                                                                                        .back{
-                                                                                                                                                                                                                                                                                                                                                                                              margin-top:20px;
-
-                                                                                                                                                                                                                                                                                                                                                                                                    font-size:14px;
-                                                                                                                                                                                                                                                                                                                                                                                                        }
-
-                                                                                                                                                                                                                                                                                                                                                                                                            .back a{
-                                                                                                                                                                                                                                                                                                                                                                                                                  color:#8d8d8d;
-                                                                                                                                                                                                                                                                                                                                                                                                                        text-decoration:none;
-                                                                                                                                                                                                                                                                                                                                                                                                                            }
-
-                                                                                                                                                                                                                                                                                                                                                                                                                              </style>
-                                                                                                                                                                                                                                                                                                                                                                                                                              </head>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                              <body>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                <!-- top -->
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                  <div class="topbar">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                      <div class="logo">
-                                                                                                                                                                                                                                                                                                                                                                                                                                            <span>▣</span>หลังบ้าน
-                                                                                                                                                                                                                                                                                                                                                                                                                                                </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    <!-- center -->
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                      <div class="container">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                          <div class="card">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="title">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                        เข้าสู่ระบบ
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="subtitle">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            เข้าสู่ระบบเพื่อเริ่มใช้งานหลังบ้าน
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <button class="login-btn google-btn" id="googleLoginBtn">
-  <span>เข้าสู่ระบบด้วย Google</span>
-</button>
-
-<button class="login-btn facebook-btn" id="facebookLoginBtn">
-  <span>เข้าสู่ระบบด้วย Facebook</span>
-</button>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <button class="login-btn">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        เข้าสู่ระบบด้วย LINE
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </button>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="back">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <a href="index.html">← กลับหน้าแรก</a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-<script>
-  const supabaseUrl = 'https://zgmgmkymabisulfxlkvv.supabase.co'
-
-  const supabaseKey =
-    'sb_publishable_2DkwWLhYQqywx6DX3pUaUQ_PQ_6V37l'
-
-  const supabase = window.supabase.createClient(
-    supabaseUrl,
-    supabaseKey
-  )
-
-  async function loginGoogle() {
-    await supabase.auth.signInWithOAuth({
-      provider: 'google',
-      options: {
-        redirectTo: 'https://langbaan-web.vercel.app'
-      }
-    })
-  }
-
-  async function loginFacebook() {
-    await supabase.auth.signInWithOAuth({
-      provider: 'facebook',
-      options: {
-        redirectTo: 'https://langbaan-web.vercel.app'
-      }
-    })
-  }
-</script>
-                                                                                                                                                                                                                                                                                                                                                                                                                                <script>
-  document
-    .getElementById('googleLoginBtn')
-    .addEventListener('click', loginGoogle)
-
-  document
-    .getElementById('facebookLoginBtn')
-    .addEventListener('click', loginFacebook)
-                                                                                                                                                                                                                                                                                                                                                                                                                                </script>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <script type="module">
-  import { supabase } from './lib/supabase.ts'
-
-  async function loginGoogle() {
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: 'google',
-      options: {
-        redirectTo: 'https://langbaan-web.vercel.app'
-      }
-    })
-
-    if (error) {
-      alert(error.message)
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>เข้าสู่ระบบ | หลังบ้าน</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:sans-serif;
     }
-  }
 
-  async function loginFacebook() {
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: 'facebook',
-      options: {
-        redirectTo: 'https://langbaan-web.vercel.app'
-      }
-    })
-
-    if (error) {
-      alert(error.message)
+    body{
+      background:#121212;
+      color:white;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
     }
-  }
 
-  document
-    .getElementById('googleLoginBtn')
-    .addEventListener('click', loginGoogle)
+    .topbar{
+      padding:20px 24px;
+      border-bottom:1px solid #222;
+    }
 
-  document
-    .getElementById('facebookLoginBtn')
-    .addEventListener('click', loginFacebook)
-      </script>
-                                                                                                                                                                                                                                                                                                                                                                                                                              </body>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </html>
+    .logo{
+      font-size:22px;
+      font-weight:700;
+    }
+
+    .logo span{
+      color:#ff2d55;
+      margin-right:6px;
+    }
+
+    .container{
+      flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:24px;
+    }
+
+    .card{
+      width:100%;
+      max-width:420px;
+      background:#1b1b1b;
+      border:1px solid #2a2a2a;
+      border-radius:30px;
+      padding:40px 28px;
+      text-align:center;
+    }
+
+    .title{
+      font-size:34px;
+      font-weight:700;
+      margin-bottom:12px;
+    }
+
+    .subtitle{
+      color:#a1a1a1;
+      line-height:1.6;
+      margin-bottom:34px;
+    }
+
+    .login-btn{
+      width:100%;
+      padding:16px;
+      border:none;
+      border-radius:18px;
+      margin-bottom:14px;
+      color:white;
+      font-size:16px;
+      font-weight:600;
+      cursor:pointer;
+      transition:0.2s;
+    }
+
+    .login-btn:hover{
+      opacity:0.9;
+    }
+
+    .google-btn{
+      background:linear-gradient(135deg,#ff2d55,#ff5f7e);
+    }
+
+    .facebook-btn{
+      background:linear-gradient(135deg,#ff2d55,#ff5f7e);
+    }
+
+    .line-btn{
+      background:#2a2a2a;
+    }
+
+    .back{
+      margin-top:20px;
+      font-size:14px;
+    }
+
+    .back a{
+      color:#8d8d8d;
+      text-decoration:none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="logo">
+      <span>▣</span> หลังบ้าน
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+
+      <div class="title">
+        เข้าสู่ระบบ
+      </div>
+
+      <div class="subtitle">
+        เข้าสู่ระบบเพื่อเริ่มใช้งานหลังบ้าน
+      </div>
+
+      <button
+        id="googleLoginBtn"
+        class="login-btn google-btn"
+      >
+        เข้าสู่ระบบด้วย Google
+      </button>
+
+      <button
+        id="facebookLoginBtn"
+        class="login-btn facebook-btn"
+      >
+        เข้าสู่ระบบด้วย Facebook
+      </button>
+
+      <button
+        class="login-btn line-btn"
+      >
+        เข้าสู่ระบบด้วย LINE
+      </button>
+
+      <div class="back">
+        <a href="index.html">
+          ← กลับหน้าแรก
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script type="module">
+    import { supabase } from './lib/supabase.ts'
+
+    async function loginGoogle() {
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        options: {
+          redirectTo: 'https://langbaan-web.vercel.app'
+        }
+      })
+
+      if (error) {
+        alert(error.message)
+      }
+    }
+
+    async function loginFacebook() {
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: 'facebook',
+        options: {
+          redirectTo: 'https://langbaan-web.vercel.app'
+        }
+      })
+
+      if (error) {
+        alert(error.message)
+      }
+    }
+
+    document
+      .getElementById('googleLoginBtn')
+      .addEventListener('click', loginGoogle)
+
+    document
+      .getElementById('facebookLoginBtn')
+      .addEventListener('click', loginFacebook)
+
+  </script>
+
+</body>
+</html>
