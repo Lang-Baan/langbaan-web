@@ -7,6 +7,22 @@
       <title>เข้าสู่ระบบ | หลังบ้าน</title>
 
         <style>
+          .google-btn {
+  background: linear-gradient(135deg, #ff4d8d, #ff6fa5);
+  color: white;
+  border: none;
+}
+
+.facebook-btn {
+  background: linear-gradient(135deg, #ff4d8d, #ff6fa5);
+  color: white;
+  border: none;
+}
+
+.google-btn:hover,
+.facebook-btn:hover {
+  opacity: 0.9;
+}
 
             *{
                   margin:0;
@@ -211,5 +227,42 @@
     .getElementById('facebookLoginBtn')
     .addEventListener('click', loginFacebook)
                                                                                                                                                                                                                                                                                                                                                                                                                                 </script>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </body>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <script type="module">
+  import { supabase } from './lib/supabase.ts'
+
+  async function loginGoogle() {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        redirectTo: 'https://langbaan-web.vercel.app'
+      }
+    })
+
+    if (error) {
+      alert(error.message)
+    }
+  }
+
+  async function loginFacebook() {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'facebook',
+      options: {
+        redirectTo: 'https://langbaan-web.vercel.app'
+      }
+    })
+
+    if (error) {
+      alert(error.message)
+    }
+  }
+
+  document
+    .getElementById('googleLoginBtn')
+    .addEventListener('click', loginGoogle)
+
+  document
+    .getElementById('facebookLoginBtn')
+    .addEventListener('click', loginFacebook)
+      </script>
+                                                                                                                                                                                                                                                                                                                                                                                                                              </body>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         </html>
