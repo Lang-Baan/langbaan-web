@@ -128,19 +128,20 @@
         เข้าสู่ระบบเพื่อเริ่มใช้งานหลังบ้าน
       </div>
 
-      <button
-        id="googleLoginBtn"
-        class="login-btn google-btn"
-      >
-        เข้าสู่ระบบด้วย Google
-      </button>
-
-      <button
-        id="facebookLoginBtn"
-        class="login-btn facebook-btn"
-      >
-        เข้าสู่ระบบด้วย Facebook
-      </button>
+      <a
+  href="https://zgmgmkymabisulfxlkvv.supabase.co/auth/v1/authorize?provider=google&redirect_to=https://langbaan-3z1pry2dj-lang-baan-s-projects.vercel.app"
+  class="login-btn google-btn"
+  style="display:flex;justify-content:center;align-items:center;text-decoration:none;"
+>
+  เข้าสู่ระบบด้วย Google
+      </a>
+      <a
+  href="https://zgmgmkymabisulfxlkvv.supabase.co/auth/v1/authorize?provider=facebook&redirect_to=https://langbaan-3z1pry2dj-lang-baan-s-projects.vercel.app"
+  class="login-btn facebook-btn"
+  style="display:flex;justify-content:center;align-items:center;text-decoration:none;"
+>
+  เข้าสู่ระบบด้วย Facebook
+      </a>
 
       <button
         class="login-btn line-btn"
@@ -158,53 +159,6 @@
 
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-<script>
-  const supabaseUrl = 'https://zgmgmkymabisulfxlkvv.supabase.co'
-
-  const supabaseKey =
-    'sb_publishable_2DkwWLhYQqywx6DX3pUaUQ_PQ_6V37l'
-
-  const supabase = window.supabase.createClient(
-    supabaseUrl,
-    supabaseKey
-  )
-
-  async function loginGoogle() {
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: 'google',
-      options: {
-        redirectTo: 'https://langbaan-web.vercel.app'
-      }
-    })
-
-    if (error) {
-      alert(error.message)
-    }
-  }
-
-  async function loginFacebook() {
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: 'facebook',
-      options: {
-        redirectTo: 'https://langbaan-web.vercel.app'
-      }
-    })
-
-    if (error) {
-      alert(error.message)
-    }
-  }
-
-  document
-    .getElementById('googleLoginBtn')
-    .addEventListener('click', loginGoogle)
-
-  document
-    .getElementById('facebookLoginBtn')
-    .addEventListener('click', loginFacebook)
-    </script>
 
 </body>
 </html>
